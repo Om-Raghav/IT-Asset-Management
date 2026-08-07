@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITAMS | Allocations</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside id="sidebar"></aside>
+  <div class="main-content">
+    <header id="topbar"></header>
+    <main class="page-body">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0 fw-bold">Asset Allocations</h4>
+        <button class="btn btn-sm btn-primary" id="addAllocBtn"><i class="bi bi-plus-lg me-1"></i>Allocate Asset</button>
+      </div>
+
+      <div class="card card-panel">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead>
+              <tr><th>Asset</th><th>Employee</th><th>Assigned Date</th><th>Expected Return</th><th>Status</th></tr>
+            </thead>
+            <tbody id="allocTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="modal fade" id="allocModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="allocForm">
+        <div class="modal-header">
+          <h5 class="modal-title">Allocate Asset</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Asset (Available only) *</label>
+            <select class="form-select" name="asset" id="allocAssetSelect" required></select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Employee *</label>
+            <select class="form-select" name="employee" id="allocEmployeeSelect" required></select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Expected Return Date</label>
+            <input type="date" class="form-control" name="expectedReturnDate">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Remarks</label>
+            <textarea class="form-control" name="remarks" rows="2"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Allocate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/common.js"></script>
+<script src="js/chat-widget.js"></script>
+<script src="js/assignments.js"></script>
+<script>renderLayout('assignments.html');</script>
+</body>
+</html>

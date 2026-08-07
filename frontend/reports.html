@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITAMS | Reports</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside id="sidebar"></aside>
+  <div class="main-content">
+    <header id="topbar"></header>
+    <main class="page-body">
+      <h4 class="fw-bold mb-3">Reports</h4>
+
+      <ul class="nav nav-pills mb-3" id="reportTabs">
+        <li class="nav-item"><button class="nav-link active" data-report="asset-inventory">Asset Inventory</button></li>
+        <li class="nav-item"><button class="nav-link" data-report="asset-utilization">Utilization</button></li>
+        <li class="nav-item"><button class="nav-link" data-report="warranty-expiry">Warranty Expiry</button></li>
+        <li class="nav-item"><button class="nav-link" data-report="repair-history">Repair History</button></li>
+        <li class="nav-item"><button class="nav-link" data-report="license-usage">License Usage</button></li>
+        <li class="nav-item"><button class="nav-link" data-report="amc-status">AMC Status</button></li>
+        <li class="nav-item"><button class="nav-link" data-report="assignment-history">Assignment History</button></li>
+      </ul>
+
+      <div class="card card-panel">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead id="reportTableHead"></thead>
+            <tbody id="reportTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/common.js"></script>
+<script src="js/chat-widget.js"></script>
+<script src="js/reports.js"></script>
+<script>renderLayout('reports.html');</script>
+</body>
+</html>

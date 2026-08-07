@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITAMS | AI Assistant</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside id="sidebar"></aside>
+  <div class="main-content">
+    <header id="topbar"></header>
+    <main class="page-body">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <div>
+          <h4 class="fw-bold mb-1">AI Assistant</h4>
+          <p class="text-muted small mb-0">Warranty, AMC, and duplicate alerts run automatically in the background every 24h and appear on the <a href="notifications.html">Notifications</a> page.</p>
+        </div>
+        <button class="btn btn-sm btn-outline-primary" id="runChecksBtn"><i class="bi bi-arrow-clockwise me-1"></i>Run Checks Now</button>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-6">
+          <div class="card card-panel p-3 mb-3">
+            <h6 class="fw-bold"><i class="bi bi-chat-dots me-1"></i>Chat Assistant</h6>
+            <p class="text-muted small mb-0">
+              Chat with the assistant anytime using the floating <i class="bi bi-robot"></i> bubble
+              in the bottom-right corner of any page — no need to come back here.
+            </p>
+          </div>
+
+          <div class="card card-panel p-3">
+            <h6 class="fw-bold"><i class="bi bi-search me-1"></i>Natural Language Search</h6>
+            <form id="nlSearchForm" class="d-flex gap-2 mb-3">
+              <input type="text" id="nlSearchInput" class="form-control" placeholder="e.g. laptops in repair after 2022">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <div id="nlSearchResults" class="small"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card card-panel p-3 mb-3">
+            <h6 class="fw-bold"><i class="bi bi-shield-exclamation me-1"></i>Warranty Expiry Prediction</h6>
+            <div id="warrantyPredictions" class="small">Loading...</div>
+          </div>
+
+          <div class="card card-panel p-3 mb-3">
+            <h6 class="fw-bold"><i class="bi bi-files me-1"></i>Duplicate Asset Detection</h6>
+            <div id="duplicateResults" class="small">Loading...</div>
+          </div>
+
+          <div class="card card-panel p-3">
+            <h6 class="fw-bold"><i class="bi bi-heart-pulse me-1"></i>Asset Health & Recommendations</h6>
+            <div id="healthResults" class="small">Loading...</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/common.js"></script>
+<script src="js/chat-widget.js"></script>
+<script src="js/ai-assistant.js"></script>
+<script>renderLayout('ai-assistant.html');</script>
+</body>
+</html>
