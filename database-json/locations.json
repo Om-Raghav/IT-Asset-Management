@@ -1,0 +1,2 @@
+{"_id":{"$oid":"6a5f670a45e625c8079794e9"},"name":"Head Office","__v":0,"city":"Jaipur","createdAt":{"$date":"2026-07-21T12:33:14.551Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.744Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794eb"},"name":"Branch Office","__v":0,"city":"Mumbai","createdAt":{"$date":"2026-07-21T12:33:14.554Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.746Z"}}

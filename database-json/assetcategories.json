@@ -1,0 +1,6 @@
+{"_id":{"$oid":"6a5f670a45e625c8079794d3"},"name":"Laptop","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.517Z"},"depreciationRateYears":3,"updatedAt":{"$date":"2026-08-07T14:15:59.701Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794d5"},"name":"Desktop","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.529Z"},"depreciationRateYears":3,"updatedAt":{"$date":"2026-08-07T14:15:59.717Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794d7"},"name":"Printer","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.531Z"},"depreciationRateYears":3,"updatedAt":{"$date":"2026-08-07T14:15:59.722Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794d9"},"name":"Server","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.533Z"},"depreciationRateYears":3,"updatedAt":{"$date":"2026-08-07T14:15:59.725Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794db"},"name":"Monitor","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.535Z"},"depreciationRateYears":3,"updatedAt":{"$date":"2026-08-07T14:15:59.727Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794dd"},"name":"Software","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.538Z"},"depreciationRateYears":3,"updatedAt":{"$date":"2026-08-07T14:15:59.73Z"}}

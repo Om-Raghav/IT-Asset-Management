@@ -1,0 +1,6 @@
+{"_id":{"$oid":"6a5f670a45e625c8079794ed"},"name":"Dell Technologies","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.557Z"},"email":"sales@dell.com","status":"Active","updatedAt":{"$date":"2026-08-07T14:15:59.748Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794ef"},"name":"HP Inc.","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.559Z"},"email":"sales@hp.com","status":"Active","updatedAt":{"$date":"2026-08-07T14:15:59.75Z"}}
+{"_id":{"$oid":"6a5f6c73b01937c42f344256"},"name":"Leveno","status":"Active","createdAt":{"$date":"2026-07-21T12:56:19.263Z"},"updatedAt":{"$date":"2026-07-21T12:56:19.263Z"},"__v":0}
+{"_id":{"$oid":"6a71754d3137e9ca7906a14f"},"name":"Lenovo","__v":0,"contactPerson":"Rahul Sharma","createdAt":{"$date":"2026-08-04T05:14:53.84Z"},"email":"sales@lenovo.com","phone":"9876543210","status":"Active","updatedAt":{"$date":"2026-08-07T14:15:59.752Z"}}
+{"_id":{"$oid":"6a71754d3137e9ca7906a151"},"name":"Acer India","__v":0,"createdAt":{"$date":"2026-08-04T05:14:53.843Z"},"email":"sales@acer.com","status":"Active","updatedAt":{"$date":"2026-08-07T14:15:59.754Z"}}
+{"_id":{"$oid":"6a71754d3137e9ca7906a153"},"name":"Apple Inc.","__v":0,"createdAt":{"$date":"2026-08-04T05:14:53.844Z"},"email":"business@apple.com","status":"Active","updatedAt":{"$date":"2026-08-07T14:15:59.756Z"}}

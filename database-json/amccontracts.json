@@ -1,0 +1,1 @@
+{"_id":{"$oid":"6a72ff3660716f242667b8b6"},"contractNumber":"B11hjk","asset":{"$oid":"6a71754d9b3f04027024f555"},"vendor":{"$oid":"6a5f670a45e625c8079794ed"},"startDate":{"$date":"2020-12-29T00:00:00Z"},"endDate":{"$date":"2027-07-31T00:00:00Z"},"cost":0,"status":"Active","createdAt":{"$date":"2026-08-05T09:15:34.822Z"},"updatedAt":{"$date":"2026-08-05T09:16:43.694Z"},"__v":0}

@@ -1,0 +1,5 @@
+{"_id":{"$oid":"6a5f670a45e625c8079794df"},"name":"IT","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.54Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.733Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794e1"},"name":"HR","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.544Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.735Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794e3"},"name":"Finance","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.546Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.739Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794e5"},"name":"Operations","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.547Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.741Z"}}
+{"_id":{"$oid":"6a5f670a45e625c8079794e7"},"name":"Sales","__v":0,"createdAt":{"$date":"2026-07-21T12:33:14.549Z"},"updatedAt":{"$date":"2026-08-07T14:15:59.743Z"}}
